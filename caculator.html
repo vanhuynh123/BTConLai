@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Caculator</h1>
+    <input type="text" id="so1"/> <input type="text" id="so2"/><br/>
+    <br/>
+    <button id="cong" onclick="phepcong()">Addition(+)</button>
+    <button id="tru" onclick="pheptru()">Subtraction(-)</button>
+    <button id="tru" onclick="phepnhan()">Multiplication(*)</button>
+    <button id="tru" onclick="phepchia()">Division(/)</button>
+    <p id="result"></p>
+</body>
+</html>
+<script>
+    function phepcong(){
+        var so1 = document.getElementById("so1").value;
+        var so2 = document.getElementById("so2").value;
+        so1 = parseFloat(so1);
+        so2= parseFloat(so2);
+        var  ketqua=so1+so2;
+        document.getElementById("result").innerText = "Result addition: "+ketqua;
+    }
+    function pheptru(){
+        var so1 = document.getElementById("so1").value;
+        var so2 = document.getElementById("so2").value;
+        so1 = parseFloat(so1);
+        so2= parseFloat(so2);
+        var  ketqua=so1-so2;
+        document.getElementById("result").innerText = "Result subtraction: "+ketqua;
+    }
+    function phepnhan(){
+        var so1 = document.getElementById("so1").value;
+        var so2 = document.getElementById("so2").value;
+        so1 = parseFloat(so1);
+        so2= parseFloat(so2);
+        var  ketqua=so1*so2;
+        document.getElementById("result").innerText = "Result multi: "+ketqua;
+    }
+    function phepchia(){
+        var so1 = document.getElementById("so1").value;
+        var so2 = document.getElementById("so2").value;
+        so1 = parseFloat(so1);
+        so2= parseFloat(so2);
+        var  ketqua=so1/so2;
+        document.getElementById("result").innerText = "Result division: "+ketqua;
+    }
+</script>
