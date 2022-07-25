@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>GÍA HOA QUẢ</h1>
+
+    <input type="text" id="ten" />  <button id="xem" onclick="tinhgia()">Xem giá</button>
+    <p id="ketqua"></p>
+    <script>
+        function tinhgia(){
+        let ten = document.getElementById("ten").value;
+        let gia;
+        switch(ten){
+            case "Ổi": document.getElementById("ketqua").innerText="20000VND/kg";
+                break;
+            case "Dưa hấu": document.getElementById("ketqua").innerText="20000VND/kg";
+              break;
+            case "Táo": document.getElementById("ketqua").innerText="30000VND/kg";
+             break;
+             case "Xoài": document.getElementById("ketqua").innerText="30000VND/kg";
+             break;
+             case "Cam": document.getElementById("ketqua").innerText="40000VND/kg";
+             break;
+             case "Chôm chôm": document.getElementById("ketqua").innerText="40000VND/kg";
+             break;
+             case "Măng cụt": document.getElementById("ketqua").innerText="50000VND/kg";
+             break;
+        }
+
+    }
+    </script>
+
+</body>
+</html>
