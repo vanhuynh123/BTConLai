@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function songuyento(n){
+        let dem=0;
+        for(let i=1;i<=n;i++)
+        {
+            
+            if(n%i==0)
+            {
+                dem++;
+            }
+        }
+        if(dem==2)
+        {
+            return 1;
+        }
+        else
+        return 0;
+    }
+    let numbers=+prompt("Nhập vào số lượng số nguyên tố cần in ra");
+    let count=0;
+    let N=2;
+    while(count<=numbers)
+    {
+        
+        
+             if(songuyento(N)==1)
+            {
+            document.write(N+"<br/>");
+            count+=1;
+            }
+            N+=1;        
+           
+    }
+    
+    
+    </script>
+</body>
+</html>
